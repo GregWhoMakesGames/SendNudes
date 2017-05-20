@@ -626,10 +626,10 @@
           <GUIMain>
             <NormalGUI>
               <OnClick />
-              <Height>200</Height>
+              <Height>70</Height>
               <Width>320</Width>
               <Left>0</Left>
-              <Top>0</Top>
+              <Top>130</Top>
               <Clickable>True</Clickable>
               <Visibility>Normal</Visibility>
               <PopupYPos>0</PopupYPos>
@@ -658,7 +658,7 @@
                 <Locked>True</Locked>
                 <Width>138</Width>
                 <Left>16</Left>
-                <Top>169</Top>
+                <Top>39</Top>
                 <ZOrder>0</ZOrder>
                 <ID>0</ID>
                 <Name>TextReply</Name>
@@ -679,7 +679,7 @@
                 <Locked>True</Locked>
                 <Width>138</Width>
                 <Left>166</Left>
-                <Top>169</Top>
+                <Top>39</Top>
                 <ZOrder>1</ZOrder>
                 <ID>1</ID>
                 <Name>ImageReply</Name>
@@ -694,7 +694,7 @@
                 <Locked>True</Locked>
                 <Width>284</Width>
                 <Left>18</Left>
-                <Top>135</Top>
+                <Top>5</Top>
                 <ZOrder>2</ZOrder>
                 <ID>2</ID>
                 <Name>ResponseText</Name>
