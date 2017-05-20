@@ -633,7 +633,7 @@
               <Clickable>True</Clickable>
               <Visibility>NormalButInitiallyOff</Visibility>
               <PopupYPos>0</PopupYPos>
-              <ZOrder>0</ZOrder>
+              <ZOrder>2</ZOrder>
               <BorderColor>50712</BorderColor>
               <Transparency>0</Transparency>
               <BackgroundColor>65535</BackgroundColor>
@@ -711,7 +711,7 @@
               <Clickable>True</Clickable>
               <Visibility>NormalButInitiallyOff</Visibility>
               <PopupYPos>0</PopupYPos>
-              <ZOrder>0</ZOrder>
+              <ZOrder>1</ZOrder>
               <BorderColor>65535</BorderColor>
               <Transparency>0</Transparency>
               <BackgroundColor>65535</BackgroundColor>
@@ -721,7 +721,7 @@
             </NormalGUI>
             <Controls>
               <GUIButton>
-                <OnClick />
+                <OnClick>rejectClick</OnClick>
                 <ClickAction>RunScript</ClickAction>
                 <NewModeNumber>0</NewModeNumber>
                 <ClipImage>False</ClipImage>
@@ -775,6 +775,62 @@
                 <ZOrder>2</ZOrder>
                 <ID>2</ID>
                 <Name>Explanation</Name>
+              </GUILabel>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>80</Height>
+              <Width>240</Width>
+              <Left>40</Left>
+              <Top>60</Top>
+              <Clickable>True</Clickable>
+              <Visibility>PopupModal</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>3</ZOrder>
+              <BorderColor>0</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>65535</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <ID>2</ID>
+              <Name>gPopupGui</Name>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <OnClick>closeModal</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>Centred</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>2</Font>
+                <PushedImage>11</PushedImage>
+                <MouseoverImage>9</MouseoverImage>
+                <Image>5</Image>
+                <Text>OK</Text>
+                <Height>24</Height>
+                <Locked>False</Locked>
+                <Width>138</Width>
+                <Left>54</Left>
+                <Top>49</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name>modalButton</Name>
+              </GUIButton>
+              <GUILabel>
+                <TextAlignment>TopLeft</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <Text />
+                <Height>40</Height>
+                <Locked>False</Locked>
+                <Width>230</Width>
+                <Left>5</Left>
+                <Top>4</Top>
+                <ZOrder>1</ZOrder>
+                <ID>1</ID>
+                <Name>oModalText</Name>
               </GUILabel>
             </Controls>
           </GUIMain>
@@ -1479,12 +1535,27 @@ return
         <GlobalVariable>
           <Name>thirdExplanation</Name>
           <Type>String</Type>
-          <DefaultValue xml:space="preserve">Marilyn Monroe from the first issue of Playboy. Presented for historical reasons.</DefaultValue>
+          <DefaultValue xml:space="preserve">Marilyn Monroe from the first issue of Playboy. Presented for historical context.</DefaultValue>
         </GlobalVariable>
         <GlobalVariable>
           <Name>reviewCount</Name>
           <Type>int</Type>
           <DefaultValue>0</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>modalWarning1</Name>
+          <Type>String</Type>
+          <DefaultValue xml:space="preserve">All significant works of art are allowed.</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>modalWarning2</Name>
+          <Type>String</Type>
+          <DefaultValue xml:space="preserve">Early examples of artistic photography are acceptable images.</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>modalWarning3</Name>
+          <Type>String</Type>
+          <DefaultValue xml:space="preserve">Though this image was once pornographic, it is used here for educational purposes.</DefaultValue>
         </GlobalVariable>
       </Variables>
     </GlobalVariables>
