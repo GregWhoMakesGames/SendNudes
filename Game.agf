@@ -614,7 +614,7 @@
         <UnloadedRooms>
           <UnloadedRoom>
             <Number>1</Number>
-            <Description IsNull="True" />
+            <Description xml:space="preserve">The only room</Description>
           </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
@@ -651,7 +651,7 @@
                 <TextColor>0</TextColor>
                 <Font>2</Font>
                 <PushedImage>0</PushedImage>
-                <MouseoverImage>0</MouseoverImage>
+                <MouseoverImage>9</MouseoverImage>
                 <Image>5</Image>
                 <Text xml:space="preserve">SEND TEXT</Text>
                 <Height>24</Height>
@@ -672,7 +672,7 @@
                 <TextColor>0</TextColor>
                 <Font>2</Font>
                 <PushedImage>0</PushedImage>
-                <MouseoverImage>0</MouseoverImage>
+                <MouseoverImage>9</MouseoverImage>
                 <Image>5</Image>
                 <Text xml:space="preserve">SEND IMAGE</Text>
                 <Height>24</Height>
@@ -880,8 +880,8 @@
         <Characters>
           <Character>
             <ID>0</ID>
-            <ScriptName>cCharacter</ScriptName>
-            <RealName>CHARACTER</RealName>
+            <ScriptName>cYou</ScriptName>
+            <RealName>You</RealName>
             <NormalView>1</NormalView>
             <SpeechView>0</SpeechView>
             <IdleView>0</IdleView>
@@ -1401,12 +1401,12 @@ return
                   <FileName>textResponse0.png</FileName>
                 </Source>
               </Sprite>
-              <Sprite Slot="3" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+              <Sprite Slot="3" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
                 <Source>
                   <FileName>greenButton.png</FileName>
                 </Source>
               </Sprite>
-              <Sprite Slot="4" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+              <Sprite Slot="4" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
                 <Source>
                   <FileName>redButton.png</FileName>
                 </Source>
@@ -1416,9 +1416,24 @@ return
                   <FileName>blueButton.png</FileName>
                 </Source>
               </Sprite>
-              <Sprite Slot="6" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+              <Sprite Slot="6" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
                 <Source>
                   <FileName>greyButton.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="7" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                <Source>
+                  <FileName>greenButtonDown.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="8" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                <Source>
+                  <FileName>redButtonDown.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="9" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>blueButtonDown.png</FileName>
                 </Source>
               </Sprite>
             </Sprites>
