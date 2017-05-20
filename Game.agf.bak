@@ -631,7 +631,7 @@
               <Left>0</Left>
               <Top>130</Top>
               <Clickable>True</Clickable>
-              <Visibility>Normal</Visibility>
+              <Visibility>NormalButInitiallyOff</Visibility>
               <PopupYPos>0</PopupYPos>
               <ZOrder>0</ZOrder>
               <BorderColor>50712</BorderColor>
@@ -639,7 +639,7 @@
               <BackgroundColor>65535</BackgroundColor>
               <BackgroundImage>0</BackgroundImage>
               <ID>0</ID>
-              <Name>gMainGui</Name>
+              <Name>gMessageGui</Name>
             </NormalGUI>
             <Controls>
               <GUIButton>
@@ -698,6 +698,84 @@
                 <ZOrder>2</ZOrder>
                 <ID>2</ID>
                 <Name>ResponseText</Name>
+              </GUITextBox>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>70</Height>
+              <Width>320</Width>
+              <Left>0</Left>
+              <Top>130</Top>
+              <Clickable>True</Clickable>
+              <Visibility>Normal</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>50712</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>65535</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <ID>1</ID>
+              <Name>gReviewGui</Name>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <OnClick />
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>Centred</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>2</Font>
+                <PushedImage>15</PushedImage>
+                <MouseoverImage>8</MouseoverImage>
+                <Image>4</Image>
+                <Text xml:space="preserve">SEND TEXT</Text>
+                <Height>24</Height>
+                <Locked>True</Locked>
+                <Width>138</Width>
+                <Left>16</Left>
+                <Top>39</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name>RejectImage</Name>
+              </GUIButton>
+              <GUIButton>
+                <OnClick />
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>Centred</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>2</Font>
+                <PushedImage>16</PushedImage>
+                <MouseoverImage>7</MouseoverImage>
+                <Image>3</Image>
+                <Text xml:space="preserve">SEND IMAGE</Text>
+                <Height>24</Height>
+                <Locked>True</Locked>
+                <Width>138</Width>
+                <Left>166</Left>
+                <Top>39</Top>
+                <ZOrder>1</ZOrder>
+                <ID>1</ID>
+                <Name>ApproveImage</Name>
+              </GUIButton>
+              <GUITextBox>
+                <OnActivate />
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <ShowBorder>True</ShowBorder>
+                <Text />
+                <Height>32</Height>
+                <Locked>True</Locked>
+                <Width>284</Width>
+                <Left>18</Left>
+                <Top>5</Top>
+                <ZOrder>2</ZOrder>
+                <ID>2</ID>
+                <Name>Explanation</Name>
               </GUITextBox>
             </Controls>
           </GUIMain>
@@ -1394,51 +1472,77 @@ return
       <SpriteFolder Name="Main">
         <SubFolders>
           <SpriteFolder Name="Buttons">
-            <SubFolders />
+            <SubFolders>
+              <SpriteFolder Name="Red">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="4" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                    <Source>
+                      <FileName>redButton.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="8" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                    <Source>
+                      <FileName>redButtonDown.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="15" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>redButtonDown2.png</FileName>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
+              <SpriteFolder Name="Blue">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="5" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>blueButton.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="9" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>blueButtonDown.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="11" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                    <Source>
+                      <FileName>blueButtonDown2.png</FileName>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
+              <SpriteFolder Name="Green">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="3" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                    <Source>
+                      <FileName>greenButton.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="7" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                    <Source>
+                      <FileName>greenButtonDown.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="16" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>greenButtonDown2.png</FileName>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
+            </SubFolders>
             <Sprites>
               <Sprite Slot="1" Width="121" Height="21" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
                 <Source>
                   <FileName>textResponse0.png</FileName>
                 </Source>
               </Sprite>
-              <Sprite Slot="3" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
-                <Source>
-                  <FileName>greenButton.png</FileName>
-                </Source>
-              </Sprite>
-              <Sprite Slot="4" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
-                <Source>
-                  <FileName>redButton.png</FileName>
-                </Source>
-              </Sprite>
-              <Sprite Slot="5" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
-                <Source>
-                  <FileName>blueButton.png</FileName>
-                </Source>
-              </Sprite>
               <Sprite Slot="6" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
                 <Source>
                   <FileName>greyButton.png</FileName>
-                </Source>
-              </Sprite>
-              <Sprite Slot="7" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
-                <Source>
-                  <FileName>greenButtonDown.png</FileName>
-                </Source>
-              </Sprite>
-              <Sprite Slot="8" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
-                <Source>
-                  <FileName>redButtonDown.png</FileName>
-                </Source>
-              </Sprite>
-              <Sprite Slot="9" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
-                <Source>
-                  <FileName>blueButtonDown.png</FileName>
-                </Source>
-              </Sprite>
-              <Sprite Slot="11" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
-                <Source>
-                  <FileName>blueButtonDown2.png</FileName>
                 </Source>
               </Sprite>
             </Sprites>
@@ -1451,6 +1555,14 @@ return
                   <FileName>pointer.png</FileName>
                 </Source>
               </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="gMainGuiImport">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="12" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
+              <Sprite Slot="13" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
+              <Sprite Slot="14" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="True" />
             </Sprites>
           </SpriteFolder>
         </SubFolders>
