@@ -704,15 +704,15 @@
           <GUIMain>
             <NormalGUI>
               <OnClick />
-              <Height>70</Height>
+              <Height>56</Height>
               <Width>320</Width>
               <Left>0</Left>
-              <Top>130</Top>
+              <Top>140</Top>
               <Clickable>True</Clickable>
               <Visibility>NormalButInitiallyOff</Visibility>
               <PopupYPos>0</PopupYPos>
               <ZOrder>0</ZOrder>
-              <BorderColor>50712</BorderColor>
+              <BorderColor>65535</BorderColor>
               <Transparency>0</Transparency>
               <BackgroundColor>65535</BackgroundColor>
               <BackgroundImage>0</BackgroundImage>
@@ -736,13 +736,13 @@
                 <Locked>True</Locked>
                 <Width>138</Width>
                 <Left>16</Left>
-                <Top>39</Top>
+                <Top>30</Top>
                 <ZOrder>0</ZOrder>
                 <ID>0</ID>
                 <Name>RejectImage</Name>
               </GUIButton>
               <GUIButton>
-                <OnClick />
+                <OnClick>approveClick</OnClick>
                 <ClickAction>RunScript</ClickAction>
                 <NewModeNumber>0</NewModeNumber>
                 <ClipImage>False</ClipImage>
@@ -753,22 +753,21 @@
                 <MouseoverImage>7</MouseoverImage>
                 <Image>3</Image>
                 <Text>APPROVE</Text>
-                <Height>24</Height>
+                <Height>20</Height>
                 <Locked>True</Locked>
                 <Width>138</Width>
                 <Left>166</Left>
-                <Top>39</Top>
+                <Top>30</Top>
                 <ZOrder>1</ZOrder>
                 <ID>1</ID>
                 <Name>ApproveImage</Name>
               </GUIButton>
-              <GUITextBox>
-                <OnActivate />
+              <GUILabel>
+                <TextAlignment>TopLeft</TextAlignment>
                 <TextColor>0</TextColor>
                 <Font>0</Font>
-                <ShowBorder>True</ShowBorder>
                 <Text />
-                <Height>32</Height>
+                <Height>28</Height>
                 <Locked>True</Locked>
                 <Width>284</Width>
                 <Left>18</Left>
@@ -776,7 +775,7 @@
                 <ZOrder>2</ZOrder>
                 <ID>2</ID>
                 <Name>Explanation</Name>
-              </GUITextBox>
+              </GUILabel>
             </Controls>
           </GUIMain>
         </GUIs>
@@ -1466,7 +1465,28 @@ return
       <PaletteEntry Index="255" Type="Background" Red="120" Green="120" Blue="120" />
     </Palette>
     <GlobalVariables>
-      <Variables />
+      <Variables>
+        <GlobalVariable>
+          <Name>firstExplanation</Name>
+          <Type>String</Type>
+          <DefaultValue xml:space="preserve">A historic work of art. Man, laid bare before his creator.</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>secondExplanation</Name>
+          <Type>String</Type>
+          <DefaultValue xml:space="preserve">One of the first nude photographs. Taken by Julien Vallou de Villeneuve.</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>thirdExplanation</Name>
+          <Type>String</Type>
+          <DefaultValue xml:space="preserve">Marilyn Monroe from the first issue of Playboy. Presented for historical reasons.</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>reviewCount</Name>
+          <Type>int</Type>
+          <DefaultValue>0</DefaultValue>
+        </GlobalVariable>
+      </Variables>
     </GlobalVariables>
     <Sprites>
       <SpriteFolder Name="Main">
@@ -1563,6 +1583,26 @@ return
               <Sprite Slot="12" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
               <Sprite Slot="13" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
               <Sprite Slot="14" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="True" />
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="Reviews">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="17" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>firstReview.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="18" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>secondReview.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="19" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>thirdReview.png</FileName>
+                </Source>
+              </Sprite>
             </Sprites>
           </SpriteFolder>
         </SubFolders>
