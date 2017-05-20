@@ -697,7 +697,7 @@
                 <Top>5</Top>
                 <ZOrder>2</ZOrder>
                 <ID>2</ID>
-                <Name>ResponseText</Name>
+                <Name>EmptyTextPrompt</Name>
               </GUITextBox>
             </Controls>
           </GUIMain>
@@ -731,7 +731,7 @@
                 <PushedImage>15</PushedImage>
                 <MouseoverImage>8</MouseoverImage>
                 <Image>4</Image>
-                <Text xml:space="preserve">SEND TEXT</Text>
+                <Text>REJECT</Text>
                 <Height>24</Height>
                 <Locked>True</Locked>
                 <Width>138</Width>
@@ -752,7 +752,7 @@
                 <PushedImage>16</PushedImage>
                 <MouseoverImage>7</MouseoverImage>
                 <Image>3</Image>
-                <Text xml:space="preserve">SEND IMAGE</Text>
+                <Text>APPROVE</Text>
                 <Height>24</Height>
                 <Locked>True</Locked>
                 <Width>138</Width>

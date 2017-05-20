@@ -697,7 +697,7 @@
                 <Top>5</Top>
                 <ZOrder>2</ZOrder>
                 <ID>2</ID>
-                <Name>ResponseText</Name>
+                <Name>EmptyTextPrompt</Name>
               </GUITextBox>
             </Controls>
           </GUIMain>
@@ -709,7 +709,7 @@
               <Left>0</Left>
               <Top>130</Top>
               <Clickable>True</Clickable>
-              <Visibility>Normal</Visibility>
+              <Visibility>NormalButInitiallyOff</Visibility>
               <PopupYPos>0</PopupYPos>
               <ZOrder>0</ZOrder>
               <BorderColor>50712</BorderColor>
