@@ -810,7 +810,7 @@
                 <Image>5</Image>
                 <Text>OK</Text>
                 <Height>24</Height>
-                <Locked>False</Locked>
+                <Locked>True</Locked>
                 <Width>138</Width>
                 <Left>54</Left>
                 <Top>49</Top>
@@ -824,7 +824,7 @@
                 <Font>0</Font>
                 <Text />
                 <Height>40</Height>
-                <Locked>False</Locked>
+                <Locked>True</Locked>
                 <Width>230</Width>
                 <Left>5</Left>
                 <Top>4</Top>
@@ -1556,6 +1556,31 @@ return
           <Name>modalWarning3</Name>
           <Type>String</Type>
           <DefaultValue xml:space="preserve">Though this image was once pornographic, it is used here for educational purposes.</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>tutorialCompleteMessage</Name>
+          <Type>String</Type>
+          <DefaultValue xml:space="preserve">Thank you for your help in reviewing these images. Credit to send one image has been added to your account.</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>tutorialMessageVisible</Name>
+          <Type>bool</Type>
+          <DefaultValue>false</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>tutorialMessage</Name>
+          <Type>String</Type>
+          <DefaultValue xml:space="preserve">As part of our terms of service, nude photographs are only permitted when of artistic significance and substance. Help us review images for appropriate content and earn credits to send free images.</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>tutorialMessage0Visible</Name>
+          <Type>bool</Type>
+          <DefaultValue>false</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>fourthExplanation</Name>
+          <Type>String</Type>
+          <DefaultValue xml:space="preserve">A picture from my latest photoshoot</DefaultValue>
         </GlobalVariable>
       </Variables>
     </GlobalVariables>
