@@ -11,8 +11,8 @@
       <GraphicsDriver>D3D9</GraphicsDriver>
       <CompressSprites>False</CompressSprites>
       <SaveScreenshots>False</SaveScreenshots>
-      <RoomTransition>FadeOutAndIn</RoomTransition>
-      <MouseWheelEnabled>True</MouseWheelEnabled>
+      <RoomTransition>Instant</RoomTransition>
+      <MouseWheelEnabled>False</MouseWheelEnabled>
       <UseLowResCoordinatesInScript>False</UseLowResCoordinatesInScript>
       <TurnBeforeFacing>False</TurnBeforeFacing>
       <TurnBeforeWalking>True</TurnBeforeWalking>
@@ -20,7 +20,7 @@
       <LetterboxMode>False</LetterboxMode>
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <PixelPerfect>True</PixelPerfect>
-      <WhenInterfaceDisabled>GreyOut</WhenInterfaceDisabled>
+      <WhenInterfaceDisabled>Unchanged</WhenInterfaceDisabled>
       <GUIAlphaStyle>MultiplyTranslucenceSrcBlend</GUIAlphaStyle>
       <SpriteAlphaStyle>Improved</SpriteAlphaStyle>
       <RunGameLoopsWhileDialogOptionsDisplayed>False</RunGameLoopsWhileDialogOptionsDisplayed>
@@ -64,16 +64,16 @@
       <HasMODMusic>False</HasMODMusic>
       <GameExplorerEnabled>False</GameExplorerEnabled>
       <Description />
-      <ReleaseDate>2007-08-19</ReleaseDate>
-      <Genre>Adventure</Genre>
+      <ReleaseDate>2017-05-21</ReleaseDate>
+      <Genre>Simulation</Genre>
       <Version>1.0.0.0</Version>
       <WindowsExperienceIndex>1</WindowsExperienceIndex>
-      <DeveloperName />
+      <DeveloperName xml:space="preserve">Greg Kinneman</DeveloperName>
       <DeveloperURL />
       <EnhancedSaveGames>False</EnhancedSaveGames>
       <SaveGameFileExtension />
       <SaveGameFolderName xml:space="preserve">Send Nudes</SaveGameFolderName>
-      <BinaryFilesInSourceControl>False</BinaryFilesInSourceControl>
+      <BinaryFilesInSourceControl>True</BinaryFilesInSourceControl>
       <AudioIndexer>0</AudioIndexer>
       <BuildTargets>Windows</BuildTargets>
     </Settings>
@@ -626,10 +626,10 @@
           <GUIMain>
             <NormalGUI>
               <OnClick />
-              <Height>70</Height>
+              <Height>200</Height>
               <Width>320</Width>
               <Left>0</Left>
-              <Top>130</Top>
+              <Top>0</Top>
               <Clickable>True</Clickable>
               <Visibility>NormalButInitiallyOff</Visibility>
               <PopupYPos>0</PopupYPos>
@@ -658,7 +658,7 @@
                 <Locked>True</Locked>
                 <Width>138</Width>
                 <Left>16</Left>
-                <Top>39</Top>
+                <Top>169</Top>
                 <ZOrder>0</ZOrder>
                 <ID>0</ID>
                 <Name>TextReply</Name>
@@ -679,7 +679,7 @@
                 <Locked>True</Locked>
                 <Width>138</Width>
                 <Left>166</Left>
-                <Top>39</Top>
+                <Top>169</Top>
                 <ZOrder>1</ZOrder>
                 <ID>1</ID>
                 <Name>ImageReply</Name>
@@ -694,11 +694,67 @@
                 <Locked>True</Locked>
                 <Width>284</Width>
                 <Left>18</Left>
-                <Top>5</Top>
+                <Top>135</Top>
                 <ZOrder>2</ZOrder>
                 <ID>2</ID>
                 <Name>EmptyTextPrompt</Name>
               </GUITextBox>
+              <GUILabel>
+                <TextAlignment>TopLeft</TextAlignment>
+                <TextColor>33823</TextColor>
+                <Font>0</Font>
+                <Text xml:space="preserve">David: Hey you. How are you doing tonight?</Text>
+                <Height>20</Height>
+                <Locked>True</Locked>
+                <Width>283</Width>
+                <Left>18</Left>
+                <Top>5</Top>
+                <ZOrder>3</ZOrder>
+                <ID>3</ID>
+                <Name>dialog1a</Name>
+              </GUILabel>
+              <GUILabel>
+                <TextAlignment>TopLeft</TextAlignment>
+                <TextColor>64528</TextColor>
+                <Font>0</Font>
+                <Text xml:space="preserve">Anon: I'm good. Tell me about yourself. What are you wearing tonight?</Text>
+                <Height>20</Height>
+                <Locked>True</Locked>
+                <Width>280</Width>
+                <Left>18</Left>
+                <Top>29</Top>
+                <ZOrder>4</ZOrder>
+                <ID>4</ID>
+                <Name>dialog1b</Name>
+              </GUILabel>
+              <GUILabel>
+                <TextAlignment>TopLeft</TextAlignment>
+                <TextColor>33823</TextColor>
+                <Font>0</Font>
+                <Text xml:space="preserve">New Label</Text>
+                <Height>20</Height>
+                <Locked>True</Locked>
+                <Width>283</Width>
+                <Left>18</Left>
+                <Top>53</Top>
+                <ZOrder>5</ZOrder>
+                <ID>5</ID>
+                <Name>dialog2a</Name>
+              </GUILabel>
+              <GUILabel>
+                <TextAlignment>TopLeft</TextAlignment>
+                <TextColor>64528</TextColor>
+                <Font>0</Font>
+                <Text xml:space="preserve">New Label</Text>
+                <Height>20</Height>
+                <Locked>True</Locked>
+                <Width>283</Width>
+                <Left>18</Left>
+                <Top>77</Top>
+                <ZOrder>6</ZOrder>
+                <ID>6</ID>
+                <Name>dialog2b</Name>
+              </GUILabel>
             </Controls>
           </GUIMain>
           <GUIMain>
@@ -889,6 +945,106 @@
                 <ID>1</ID>
                 <Name>TextPrompt</Name>
               </GUITextBox>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <TextWindowGUI>
+              <TextColor>0</TextColor>
+              <Padding>3</Padding>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <ID>4</ID>
+              <Name>gTextGui</Name>
+            </TextWindowGUI>
+            <Controls>
+              <GUITextWindowEdge>
+                <Image>1</Image>
+                <Height>10</Height>
+                <Locked>False</Locked>
+                <Width>10</Width>
+                <Left>0</Left>
+                <Top>0</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name />
+              </GUITextWindowEdge>
+              <GUITextWindowEdge>
+                <Image>1</Image>
+                <Height>10</Height>
+                <Locked>False</Locked>
+                <Width>10</Width>
+                <Left>0</Left>
+                <Top>90</Top>
+                <ZOrder>1</ZOrder>
+                <ID>1</ID>
+                <Name />
+              </GUITextWindowEdge>
+              <GUITextWindowEdge>
+                <Image>1</Image>
+                <Height>10</Height>
+                <Locked>False</Locked>
+                <Width>10</Width>
+                <Left>90</Left>
+                <Top>0</Top>
+                <ZOrder>2</ZOrder>
+                <ID>2</ID>
+                <Name />
+              </GUITextWindowEdge>
+              <GUITextWindowEdge>
+                <Image>1</Image>
+                <Height>10</Height>
+                <Locked>False</Locked>
+                <Width>10</Width>
+                <Left>90</Left>
+                <Top>90</Top>
+                <ZOrder>3</ZOrder>
+                <ID>3</ID>
+                <Name />
+              </GUITextWindowEdge>
+              <GUITextWindowEdge>
+                <Image>1</Image>
+                <Height>10</Height>
+                <Locked>False</Locked>
+                <Width>10</Width>
+                <Left>0</Left>
+                <Top>40</Top>
+                <ZOrder>4</ZOrder>
+                <ID>4</ID>
+                <Name />
+              </GUITextWindowEdge>
+              <GUITextWindowEdge>
+                <Image>1</Image>
+                <Height>10</Height>
+                <Locked>False</Locked>
+                <Width>10</Width>
+                <Left>90</Left>
+                <Top>40</Top>
+                <ZOrder>5</ZOrder>
+                <ID>5</ID>
+                <Name />
+              </GUITextWindowEdge>
+              <GUITextWindowEdge>
+                <Image>1</Image>
+                <Height>10</Height>
+                <Locked>False</Locked>
+                <Width>10</Width>
+                <Left>40</Left>
+                <Top>0</Top>
+                <ZOrder>6</ZOrder>
+                <ID>6</ID>
+                <Name />
+              </GUITextWindowEdge>
+              <GUITextWindowEdge>
+                <Image>1</Image>
+                <Height>10</Height>
+                <Locked>False</Locked>
+                <Width>10</Width>
+                <Left>40</Left>
+                <Top>90</Top>
+                <ZOrder>7</ZOrder>
+                <ID>7</ID>
+                <Name />
+              </GUITextWindowEdge>
             </Controls>
           </GUIMain>
         </GUIs>
