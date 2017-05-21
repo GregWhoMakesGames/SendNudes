@@ -1682,24 +1682,34 @@ return
             </Sprites>
           </SpriteFolder>
           <SpriteFolder Name="Reviews">
-            <SubFolders />
-            <Sprites>
-              <Sprite Slot="17" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
-                <Source>
-                  <FileName>firstReview.png</FileName>
-                </Source>
-              </Sprite>
-              <Sprite Slot="18" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
-                <Source>
-                  <FileName>secondReview.png</FileName>
-                </Source>
-              </Sprite>
-              <Sprite Slot="19" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
-                <Source>
-                  <FileName>thirdReview.png</FileName>
-                </Source>
-              </Sprite>
-            </Sprites>
+            <SubFolders>
+              <SpriteFolder Name="Tutorial">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="17" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>firstReview.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="18" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>secondReview.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="19" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>thirdReview.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="20" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>baseImages/Review/tutorial3.png</FileName>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
+            </SubFolders>
+            <Sprites />
           </SpriteFolder>
         </SubFolders>
         <Sprites>
