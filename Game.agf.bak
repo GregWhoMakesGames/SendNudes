@@ -834,6 +834,63 @@
               </GUILabel>
             </Controls>
           </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>70</Height>
+              <Width>320</Width>
+              <Left>0</Left>
+              <Top>130</Top>
+              <Clickable>True</Clickable>
+              <Visibility>NormalButInitiallyOff</Visibility>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>2</ZOrder>
+              <BorderColor>50712</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>65535</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <ID>3</ID>
+              <Name>gSubmitGui</Name>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <OnClick>onClickSubmit</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>Centred</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>2</Font>
+                <PushedImage>11</PushedImage>
+                <MouseoverImage>9</MouseoverImage>
+                <Image>5</Image>
+                <Text>SUBMIT</Text>
+                <Height>24</Height>
+                <Locked>True</Locked>
+                <Width>138</Width>
+                <Left>91</Left>
+                <Top>39</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name>ImageReply2</Name>
+              </GUIButton>
+              <GUITextBox>
+                <OnActivate />
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <ShowBorder>True</ShowBorder>
+                <Text />
+                <Height>32</Height>
+                <Locked>True</Locked>
+                <Width>284</Width>
+                <Left>18</Left>
+                <Top>5</Top>
+                <ZOrder>1</ZOrder>
+                <ID>1</ID>
+                <Name>TextPrompt</Name>
+              </GUITextBox>
+            </Controls>
+          </GUIMain>
         </GUIs>
       </GUIFolder>
     </GUIs>
@@ -1582,6 +1639,11 @@ return
           <Type>String</Type>
           <DefaultValue xml:space="preserve">This image is clearly graphic pornography and has no artistic value or substance.</DefaultValue>
         </GlobalVariable>
+        <GlobalVariable>
+          <Name>submitNumber</Name>
+          <Type>int</Type>
+          <DefaultValue>0</DefaultValue>
+        </GlobalVariable>
       </Variables>
     </GlobalVariables>
     <Sprites>
@@ -1830,6 +1892,36 @@ return
               <Sprite Slot="38" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
                 <Source>
                   <FileName>baseImages/Review/review21.png</FileName>
+                </Source>
+              </Sprite>
+            </Sprites>
+          </SpriteFolder>
+          <SpriteFolder Name="Submit">
+            <SubFolders />
+            <Sprites>
+              <Sprite Slot="39" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>baseImages/Submit/prot1.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="40" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>baseImages/Submit/prot2.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="41" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>baseImages/Submit/prot3.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="42" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>baseImages/Submit/prot4.png</FileName>
+                </Source>
+              </Sprite>
+              <Sprite Slot="43" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                <Source>
+                  <FileName>baseImages/Submit/prot5.png</FileName>
                 </Source>
               </Sprite>
             </Sprites>
