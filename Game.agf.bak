@@ -2084,12 +2084,12 @@ return
           <SpriteFolder Name="Submit">
             <SubFolders />
             <Sprites>
-              <Sprite Slot="39" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+              <Sprite Slot="39" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
                 <Source>
                   <FileName>baseImages/Submit/prot1.png</FileName>
                 </Source>
               </Sprite>
-              <Sprite Slot="40" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+              <Sprite Slot="40" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
                 <Source>
                   <FileName>baseImages/Submit/prot2.png</FileName>
                 </Source>
