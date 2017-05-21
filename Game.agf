@@ -643,7 +643,7 @@
             </NormalGUI>
             <Controls>
               <GUIButton>
-                <OnClick />
+                <OnClick>onClickSendText</OnClick>
                 <ClickAction>RunScript</ClickAction>
                 <NewModeNumber>0</NewModeNumber>
                 <ClipImage>False</ClipImage>
@@ -1523,6 +1523,11 @@ return
     <GlobalVariables>
       <Variables>
         <GlobalVariable>
+          <Name>textCountThreshold</Name>
+          <Type>int</Type>
+          <DefaultValue>3</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
           <Name>reviewCount</Name>
           <Type>int</Type>
           <DefaultValue>0</DefaultValue>
@@ -1555,12 +1560,17 @@ return
         <GlobalVariable>
           <Name>tutorialMessage</Name>
           <Type>String</Type>
-          <DefaultValue xml:space="preserve">As part of our terms of service, nude photographs are only permitted when of artistic significance and substance. Help us review images for appropriate content and earn credits to send free images.</DefaultValue>
+          <DefaultValue xml:space="preserve">As part of our terms of service, nude photographs are only permitted when of artistic significance and substance. Help us review images for appropriate content in order to send images.</DefaultValue>
         </GlobalVariable>
         <GlobalVariable>
           <Name>tutorialMessage0Visible</Name>
           <Type>bool</Type>
           <DefaultValue>false</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>textCount</Name>
+          <Type>int</Type>
+          <DefaultValue>0</DefaultValue>
         </GlobalVariable>
         <GlobalVariable>
           <Name>currentObject</Name>
@@ -1753,7 +1763,7 @@ return
                       <FileName>baseImages/Review/4/review10.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="28" Width="350" Height="175" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                  <Sprite Slot="28" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
                     <Source>
                       <FileName>baseImages/Review/4/review11.png</FileName>
                     </Source>
@@ -1773,12 +1783,12 @@ return
                       <FileName>baseImages/Review/5/review13.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="31" Width="324" Height="162" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                  <Sprite Slot="31" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
                     <Source>
                       <FileName>baseImages/Review/5/review14.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="32" Width="256" Height="127" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                  <Sprite Slot="32" Width="256" Height="127" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
                     <Source>
                       <FileName>baseImages/Review/5/review15.png</FileName>
                     </Source>
