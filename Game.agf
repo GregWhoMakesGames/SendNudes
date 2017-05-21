@@ -664,7 +664,7 @@
                 <Name>TextReply</Name>
               </GUIButton>
               <GUIButton>
-                <OnClick />
+                <OnClick>onClickSendImage</OnClick>
                 <ClickAction>RunScript</ClickAction>
                 <NewModeNumber>0</NewModeNumber>
                 <ClipImage>False</ClipImage>
@@ -1523,21 +1523,6 @@ return
     <GlobalVariables>
       <Variables>
         <GlobalVariable>
-          <Name>firstExplanation</Name>
-          <Type>String</Type>
-          <DefaultValue xml:space="preserve">A historic work of art. Man, laid bare before his creator.</DefaultValue>
-        </GlobalVariable>
-        <GlobalVariable>
-          <Name>secondExplanation</Name>
-          <Type>String</Type>
-          <DefaultValue xml:space="preserve">One of the first nude photographs. Taken by Julien Vallou de Villeneuve.</DefaultValue>
-        </GlobalVariable>
-        <GlobalVariable>
-          <Name>thirdExplanation</Name>
-          <Type>String</Type>
-          <DefaultValue xml:space="preserve">A scene from one of the first pornographic films. Presented for its historical significance.</DefaultValue>
-        </GlobalVariable>
-        <GlobalVariable>
           <Name>reviewCount</Name>
           <Type>int</Type>
           <DefaultValue>0</DefaultValue>
@@ -1578,14 +1563,9 @@ return
           <DefaultValue>false</DefaultValue>
         </GlobalVariable>
         <GlobalVariable>
-          <Name>fourthExplanation</Name>
-          <Type>String</Type>
-          <DefaultValue xml:space="preserve">A picture from my latest photoshoot</DefaultValue>
-        </GlobalVariable>
-        <GlobalVariable>
           <Name>currentObject</Name>
           <Type>int</Type>
-          <DefaultValue>0</DefaultValue>
+          <DefaultValue>1</DefaultValue>
         </GlobalVariable>
         <GlobalVariable>
           <Name>modalWarning4</Name>
@@ -1710,8 +1690,139 @@ return
                   </Sprite>
                 </Sprites>
               </SpriteFolder>
+              <SpriteFolder Name="R2">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="13" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>baseImages/Review/2/review1.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="14" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>baseImages/Review/2/review2.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="19" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>baseImages/Review/2/review3.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="21" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>baseImages/Review/2/review4.png</FileName>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
+              <SpriteFolder Name="R3">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="22" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>baseImages/Review/3/review5.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="23" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>baseImages/Review/3/review6.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="24" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>baseImages/Review/3/review7.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="25" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>baseImages/Review/3/review8.png</FileName>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
+              <SpriteFolder Name="R4">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="26" Width="256" Height="129" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>baseImages/Review/4/review9.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="27" Width="256" Height="129" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>baseImages/Review/4/review10.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="28" Width="350" Height="175" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>baseImages/Review/4/review11.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="29" Width="256" Height="129" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>baseImages/Review/4/review12.png</FileName>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
+              <SpriteFolder Name="R5">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="30" Width="256" Height="129" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>baseImages/Review/5/review13.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="31" Width="324" Height="162" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>baseImages/Review/5/review14.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="32" Width="256" Height="127" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>baseImages/Review/5/review15.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="33" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>baseImages/Review/5/review16.png</FileName>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
+              <SpriteFolder Name="R6">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="34" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>baseImages/Review/6/review17.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="35" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>baseImages/Review/6/review18.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="36" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>baseImages/Review/6/review19.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="37" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+                    <Source>
+                      <FileName>baseImages/Review/6/review20.png</FileName>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
             </SubFolders>
-            <Sprites />
+            <Sprites>
+              <Sprite Slot="38" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                <Source>
+                  <FileName>baseImages/Review/review21.png</FileName>
+                </Source>
+              </Sprite>
+            </Sprites>
           </SpriteFolder>
         </SubFolders>
         <Sprites>
