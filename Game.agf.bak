@@ -1560,7 +1560,7 @@ return
         <GlobalVariable>
           <Name>tutorialMessage</Name>
           <Type>String</Type>
-          <DefaultValue xml:space="preserve">As part of our terms of service, nude photographs are only permitted when of artistic significance and substance. Help us review images for appropriate content and earn credits to send free images.</DefaultValue>
+          <DefaultValue xml:space="preserve">As part of our terms of service, nude photographs are only permitted when of artistic significance and substance. Help us review images for appropriate content in order to send images.</DefaultValue>
         </GlobalVariable>
         <GlobalVariable>
           <Name>tutorialMessage0Visible</Name>
