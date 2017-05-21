@@ -1777,7 +1777,7 @@ return
         <GlobalVariable>
           <Name>tutorialCompleteMessage</Name>
           <Type>String</Type>
-          <DefaultValue xml:space="preserve">Thank you for your help in reviewing these example images. In the future you will be asked to review photos submitted by other users. To prevent misuse of the application, your review responses will be compared to the responses of other users.</DefaultValue>
+          <DefaultValue />
         </GlobalVariable>
         <GlobalVariable>
           <Name>tutorialMessageVisible</Name>
