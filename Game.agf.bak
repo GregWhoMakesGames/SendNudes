@@ -1535,7 +1535,7 @@ return
         <GlobalVariable>
           <Name>thirdExplanation</Name>
           <Type>String</Type>
-          <DefaultValue xml:space="preserve">Marilyn Monroe from the first issue of Playboy. Presented for historical context.</DefaultValue>
+          <DefaultValue xml:space="preserve">A scene from one of the first pornographic films. Presented for its historical significance.</DefaultValue>
         </GlobalVariable>
         <GlobalVariable>
           <Name>reviewCount</Name>
@@ -1560,7 +1560,7 @@ return
         <GlobalVariable>
           <Name>tutorialCompleteMessage</Name>
           <Type>String</Type>
-          <DefaultValue xml:space="preserve">Thank you for your help in reviewing these images. Credit to send one image has been added to your account.</DefaultValue>
+          <DefaultValue xml:space="preserve">Thank you for your help in reviewing these images. In the future you will be asked to review photos submitted by other users.</DefaultValue>
         </GlobalVariable>
         <GlobalVariable>
           <Name>tutorialMessageVisible</Name>
@@ -1581,6 +1581,16 @@ return
           <Name>fourthExplanation</Name>
           <Type>String</Type>
           <DefaultValue xml:space="preserve">A picture from my latest photoshoot</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>currentObject</Name>
+          <Type>int</Type>
+          <DefaultValue>0</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>modalWarning4</Name>
+          <Type>String</Type>
+          <DefaultValue xml:space="preserve">This image is clearly graphic pornography and has no artistic value or substance.</DefaultValue>
         </GlobalVariable>
       </Variables>
     </GlobalVariables>
@@ -1673,14 +1683,6 @@ return
               </Sprite>
             </Sprites>
           </SpriteFolder>
-          <SpriteFolder Name="gMainGuiImport">
-            <SubFolders />
-            <Sprites>
-              <Sprite Slot="12" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="13" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="False" />
-              <Sprite Slot="14" Width="138" Height="24" ColorDepth="32" Resolution="LowRes" AlphaChannel="True" />
-            </Sprites>
-          </SpriteFolder>
           <SpriteFolder Name="Reviews">
             <SubFolders>
               <SpriteFolder Name="Tutorial">
@@ -1696,14 +1698,14 @@ return
                       <FileName>secondReview.png</FileName>
                     </Source>
                   </Sprite>
-                  <Sprite Slot="19" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
-                    <Source>
-                      <FileName>thirdReview.png</FileName>
-                    </Source>
-                  </Sprite>
                   <Sprite Slot="20" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
                     <Source>
                       <FileName>baseImages/Review/tutorial3.png</FileName>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="12" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
+                    <Source>
+                      <FileName>baseImages/Review/tutorial4.png</FileName>
                     </Source>
                   </Sprite>
                 </Sprites>
