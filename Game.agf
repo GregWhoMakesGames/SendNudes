@@ -2094,7 +2094,7 @@ return
                   <FileName>baseImages/Submit/prot2.png</FileName>
                 </Source>
               </Sprite>
-              <Sprite Slot="41" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+              <Sprite Slot="41" Width="256" Height="128" ColorDepth="32" Resolution="LowRes" AlphaChannel="True">
                 <Source>
                   <FileName>baseImages/Submit/prot3.png</FileName>
                 </Source>
