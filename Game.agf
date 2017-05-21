@@ -1587,7 +1587,7 @@ return
         <GlobalVariable>
           <Name>reviewCount</Name>
           <Type>int</Type>
-          <DefaultValue>0</DefaultValue>
+          <DefaultValue>1</DefaultValue>
         </GlobalVariable>
         <GlobalVariable>
           <Name>modalWarning1</Name>
@@ -1607,7 +1607,7 @@ return
         <GlobalVariable>
           <Name>tutorialCompleteMessage</Name>
           <Type>String</Type>
-          <DefaultValue xml:space="preserve">Thank you for your help in reviewing these images. In the future you will be asked to review photos submitted by other users.</DefaultValue>
+          <DefaultValue xml:space="preserve">Thank you for your help in reviewing these example images. In the future you will be asked to review photos submitted by other users. To prevent misuse of the application, your review responses will be compared to the responses of other users.</DefaultValue>
         </GlobalVariable>
         <GlobalVariable>
           <Name>tutorialMessageVisible</Name>
@@ -1617,7 +1617,7 @@ return
         <GlobalVariable>
           <Name>tutorialMessage</Name>
           <Type>String</Type>
-          <DefaultValue xml:space="preserve">As part of our terms of service, nude photographs are only permitted when of artistic significance and substance. Help us review images for appropriate content in order to send images.</DefaultValue>
+          <DefaultValue xml:space="preserve">Thank you for using Msngr2000. As part of our terms of service, nude photos are only permitted when of artistic significance and substance. Help us review images for appropriate content in order to send your own images.</DefaultValue>
         </GlobalVariable>
         <GlobalVariable>
           <Name>tutorialMessage0Visible</Name>
@@ -1641,6 +1641,16 @@ return
         </GlobalVariable>
         <GlobalVariable>
           <Name>submitNumber</Name>
+          <Type>int</Type>
+          <DefaultValue>0</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>endingMessageVisible</Name>
+          <Type>bool</Type>
+          <DefaultValue>false</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>imageCount</Name>
           <Type>int</Type>
           <DefaultValue>0</DefaultValue>
         </GlobalVariable>
@@ -1932,6 +1942,11 @@ return
           <Sprite Slot="2" Width="320" Height="200" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
             <Source>
               <FileName>sendNudesLayout.png</FileName>
+            </Source>
+          </Sprite>
+          <Sprite Slot="44" Width="256" Height="40" ColorDepth="32" Resolution="LowRes" AlphaChannel="False">
+            <Source>
+              <FileName>baseImages/title.bmp</FileName>
             </Source>
           </Sprite>
         </Sprites>
