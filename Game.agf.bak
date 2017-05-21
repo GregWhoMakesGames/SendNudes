@@ -731,7 +731,7 @@
                 <TextAlignment>TopLeft</TextAlignment>
                 <TextColor>33823</TextColor>
                 <Font>0</Font>
-                <Text xml:space="preserve">New Label</Text>
+                <Text xml:space="preserve">David: Text 2</Text>
                 <Height>20</Height>
                 <Locked>True</Locked>
                 <Width>283</Width>
@@ -745,7 +745,7 @@
                 <TextAlignment>TopLeft</TextAlignment>
                 <TextColor>64528</TextColor>
                 <Font>0</Font>
-                <Text xml:space="preserve">New Label</Text>
+                <Text xml:space="preserve">Anon: Text 3</Text>
                 <Height>20</Height>
                 <Locked>True</Locked>
                 <Width>283</Width>
@@ -754,6 +754,20 @@
                 <ZOrder>6</ZOrder>
                 <ID>6</ID>
                 <Name>dialog2b</Name>
+              </GUILabel>
+              <GUILabel>
+                <TextAlignment>TopLeft</TextAlignment>
+                <TextColor>33823</TextColor>
+                <Font>0</Font>
+                <Text xml:space="preserve">David: Text 4</Text>
+                <Height>20</Height>
+                <Locked>False</Locked>
+                <Width>283</Width>
+                <Left>18</Left>
+                <Top>101</Top>
+                <ZOrder>7</ZOrder>
+                <ID>7</ID>
+                <Name>dialog3a</Name>
               </GUILabel>
             </Controls>
           </GUIMain>
@@ -1738,7 +1752,7 @@ return
         <GlobalVariable>
           <Name>textCountThreshold</Name>
           <Type>int</Type>
-          <DefaultValue>3</DefaultValue>
+          <DefaultValue>2</DefaultValue>
         </GlobalVariable>
         <GlobalVariable>
           <Name>reviewCount</Name>
